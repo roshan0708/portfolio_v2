@@ -1,10 +1,17 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
       Hello World
+      {/*
+      <Navbar/>
+      <Cover/>
+      <About/>
+      <WorkExperience/>
+      <Projects/>
+      <Contact/>
+      */}
     </div>
   );
 }
