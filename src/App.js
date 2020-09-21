@@ -1,17 +1,12 @@
 import React from 'react';
+import Cover from './components/cover';
+import NavbarComponent from "./components/navbar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      Hello World
-      {/*
-      <Navbar/>
-      <Cover/>
-      <About/>
-      <WorkExperience/>
-      <Projects/>
-      <Contact/>
-      */}
+    <div className="app">
+      <NavbarComponent />
+      <Cover />
     </div>
   );
 }
