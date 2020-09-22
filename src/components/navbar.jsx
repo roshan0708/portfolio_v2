@@ -4,7 +4,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 const NavbarComponent = () => {
     return (
       <>
-        <Navbar className="header-nav" fixed="top" collapseOnSelect bg="light" expand="lg">
+        <Navbar className="header-nav" fixed="top" collapseOnSelect bg="dark" expand="lg">
           <Navbar.Brand href="#home" className="brand-name ml-5">
             Roshan.
           </Navbar.Brand>
