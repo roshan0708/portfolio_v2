@@ -1,20 +1,27 @@
 .header-nav{
+    background: transparent !important;
     .brand-name{
+        color: whitesmoke;
         font-size: xx-large;
         font-family: 'Pacifico', cursive !important;
+        &:hover{
+            color:white;
+        }
     }
     .slash{
-        color:rgba(0,0,0,0.5);
+        color:white;
+        font-family: 'Special Elite', cursive !important;
         padding:0.5rem;
         font-size: large;
         border: 2px solid transparent;
     }
     .nav-link{
+        color:white !important;
         font-size: large;
-        font-family:  'Rubik', sans-serif !important;
+        font-family: 'Special Elite', cursive !important;
         border: 2px solid transparent;
         &:hover{
-            border-bottom: 2px solid #5ca9fb;
+            border-bottom: 2px solid #ffff;
             transition: border-bottom 0.2s ease-in-out;
         }
     }

@@ -1,9 +1,15 @@
 .bg-div{
-    background-image: url("../../assets/img/bg-5.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../../assets/img/bg-9.jpg");
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    position: relative;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .bg-div {
+    background-attachment: scroll;
+  }
 }
