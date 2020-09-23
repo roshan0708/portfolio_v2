@@ -28,6 +28,32 @@ body {
   height: 100%;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 100vh;
+  padding:0 150px;
+}
+
+.div-1{
+  max-width: 1000px;
+  width: 100%;
+}
+
+.div-2{
+  max-width: 900px;
+  width: 100%;
+}
+
+.div-3{
+  max-width: 700px;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -43,3 +69,4 @@ li {
 
 @import "./layout/navbar";
 @import "./layout/cover";
+@import "./layout/about";

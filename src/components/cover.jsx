@@ -7,14 +7,14 @@ const Cover = () => {
       <div className="bg-div">
         <div className="head mx-5">
           <main className="head-div mx-auto">
-            <section className="content-section">
+            <section className="div-1">
               <h1 className="my-1 head-div-first-text">Hi, my name is</h1>
               <h1 className="head-div-second-text">Roshan Kanwar.</h1>
               <h1 className="head-div-third-text">
-                I build things for the web.
+                I turn ideas into reality.
               </h1>
               <p className="head-div-fourth-text">
-                I'm a full-stack developer and competitive coder based in India,
+                I'm a software developer and competitive coder based in India,
                 with keen interest and skills in building beautiful and eye
                 catching websites.
               </p>
@@ -31,17 +31,29 @@ const Cover = () => {
         <div aria-orientation="left" className="social-media">
           <ul className="social-media-list">
             <li>
-              <a className="social-media-list-link">
+              <a
+                className="social-media-list-link"
+                href="https://github.com/roshan0708"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faGithub} className="media-icons" />
               </a>
             </li>
             <li>
-              <a className="social-media-list-link">
+              <a
+                className="social-media-list-link"
+                href="https://www.linkedin.com/in/roshan0708/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} className="media-icons" />
               </a>
             </li>
             <li>
-              <a className="social-media-list-link">
+              <a
+                className="social-media-list-link"
+                href="https://www.hackerrank.com/roshan_0708"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faHackerrank} className="media-icons" />
               </a>
             </li>

@@ -1,0 +1,26 @@
+.about{
+    .text{
+        max-width: 950px;
+    }
+    .skills-box{
+        display: flex;
+        max-width: 400px;
+        width: 100%;
+        justify-content: space-between;
+        .lists{
+            li{
+                display: flex;
+                align-items: center;
+                &::before{
+                    content:"▶";
+                    position: relative;
+                    margin-right: 10px;
+                    left:0;
+                    line-height: 11px;
+                    font-size: 10px;
+                    color: #63c9c6;
+                }
+            }
+        }
+    }
+}

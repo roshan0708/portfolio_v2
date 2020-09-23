@@ -19,15 +19,6 @@
         min-height: 100vh;
         display: flex;
         &-div{
-            width: fit-content;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            max-width: 1600px;
-            max-height: 100vh;
-            padding:0 150px;
             &-first-text{
                 font-family: 'Courier Prime', monospace;;
                 font-size: 18px !important;
@@ -39,18 +30,15 @@
                 padding: 0 !important;
             }
             &-third-text{
-                color: #f9f6f7 !important;
+                color: #bae8e8 !important;
             }
             &-fourth-text{
                 max-width: 500px;
+                font-size: 17px;
                 margin:20px 0 0;
                 line-height: 1.5;
                 white-space: pre-wrap;
                 padding-left: 5px;
-            }
-            .content-section{
-                max-width: 1000px;
-                width: 100%;
             }
         }
     }
@@ -78,7 +66,6 @@
         position: relative;
         display: block;
         width: 35px;
-        cursor: pointer !important;
         height: 55px;
         margin: 0 auto 20px;
         -webkit-box-sizing: border-box;
@@ -133,7 +120,7 @@
                 position: relative;
                 transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
                 cursor: pointer;
-                &:focus,&:hover{
+                &:hover{
                     color: #29a19c;
                 }
             }
@@ -144,7 +131,7 @@
                     height:24px;
                     fill: currentColor;
                 }
-                &:hover,&:focus{
+                &:hover{
                     transform: translateY(-3px);
                 }
             }
