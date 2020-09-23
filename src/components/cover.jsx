@@ -6,7 +6,7 @@ const Cover = () => {
     return (
       <div className="bg-div">
         <div className="head mx-5">
-          <main className="head-div mx-auto">
+          <div className="head-div mx-auto main-div">
             <section className="div-1">
               <h1 className="my-1 head-div-first-text">Hi, my name is</h1>
               <h1 className="head-div-second-text">Roshan Kanwar.</h1>
@@ -19,7 +19,7 @@ const Cover = () => {
                 catching websites.
               </p>
             </section>
-          </main>
+          </div>
         </div>
         <span className="scroll-btn">
           <a href="#">
@@ -35,6 +35,7 @@ const Cover = () => {
                 className="social-media-list-link"
                 href="https://github.com/roshan0708"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} className="media-icons" />
               </a>
@@ -44,6 +45,7 @@ const Cover = () => {
                 className="social-media-list-link"
                 href="https://www.linkedin.com/in/roshan0708/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="media-icons" />
               </a>
@@ -53,6 +55,7 @@ const Cover = () => {
                 className="social-media-list-link"
                 href="https://www.hackerrank.com/roshan_0708"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faHackerrank} className="media-icons" />
               </a>

@@ -1,9 +1,11 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
 const About = () => {
     return (
-      <main style={{ background: "black", color: "white" }} className="py-5">
+      <div
+        style={{ background: "#0b0b0d", color: "white" }}
+        className="py-5 main-div"
+      >
         <section className="div-1 about">
           <h1 className="heading">About Me</h1>
           <div>
@@ -47,7 +49,7 @@ const About = () => {
             </ul>
           </div>
         </section>
-      </main>
+      </div>
     );
 }
 
