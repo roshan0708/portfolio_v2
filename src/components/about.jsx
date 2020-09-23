@@ -4,7 +4,7 @@ const About = () => {
     return (
       <div
         style={{ background: "#0b0b0d", color: "white" }}
-        className="py-5 main-div"
+        className="main-div"
       >
         <section className="div-1 about">
           <h1 className="heading">About Me</h1>

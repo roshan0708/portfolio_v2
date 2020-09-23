@@ -20,9 +20,9 @@ const Timeline = () => {
                           <div className="timeline-heading">
                             <div className="timeline-heading-div">
                               <h4 className="timeline-title">{item.company}</h4>
-                              <h4 style={{fontSize:"18px"}}>{item.date}</h4>
+                              <h4 style={{fontSize:"17px",opacity:"0.4"}}>{item.date}</h4>
                             </div>
-                            <p>Software Engineer Intern</p>
+                            <p className="text">Software Engineer Intern</p>
                           </div>
                           <div className="timeline-body">
                             <p>{item.text}</p>

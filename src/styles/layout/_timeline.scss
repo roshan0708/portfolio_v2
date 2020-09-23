@@ -9,9 +9,17 @@
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: #eeeeee;
+        background-color: #f2f3f7;
         left: 0;
         margin-left: -1.5px;
+    }
+    &-body{
+        p{
+            line-height: 1.4;
+        }
+    }
+    .text{
+        margin:-2px 0 14px 0;
     }
     &-heading-div{
         display: flex;
@@ -30,7 +38,7 @@
             clear: both;
         }
 		.timeline-badge {
-            color: #fff;
+            color: #f2f3f7;
             width: 54px;
             height: 54px;
             line-height: 45px;
@@ -41,12 +49,16 @@
             left: -21px;
             margin-left: -25px;
             background-color:rgb(66, 164, 160);
-			border: 3px solid #fff;
+			border: 3px solid #f2f3f7;
             z-index: 100;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
             border-bottom-right-radius: 50%;
             border-bottom-left-radius: 50%;
+            &:hover{
+                background-color: #63c9c6;
+                transition: all 0.3 ease-in-out;
+            }
 			.glyphicon {
 				top: 2px;
 				left: 0px;
@@ -59,20 +71,20 @@
             max-height: 150px;
             float: left;
 			right: 16px;
-            border: 1px solid #777777;
-			background: #fff;
+            border: 1px solid #f2f3f7;
+			background: #f2f3f7;
             border-radius: 2px;
             padding: 20px;
             -webkit-box-shadow: 0 1px 6px rgba(255, 255, 255, 0.175);
             box-shadow: 0 1px 6px rgba(255, 255, 255, 0.175);
 			&:before {
                 position: absolute;
-                top: 26px;
+                top: 0;
                 right: -16px;
                 display: inline-block;
                 border-top: 16px solid transparent;
-                border-left: 16px solid #777777;
-                border-right: 0 solid #777777;
+                border-left: 16px solid #f2f3f7;
+                border-right: 0 solid #f2f3f7;
                 border-bottom: 16px solid transparent;
                 content: " ";
             }
@@ -91,6 +103,8 @@
     }
 	.timeline-item{
 		.timeline-panel {
+            background-color: #f2f3f7;
+            top:27px;
 			left: 40px;
 			&:before {
 				border-left-width: 0;
