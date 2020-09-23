@@ -4,8 +4,9 @@
         color: whitesmoke;
         font-size: xx-large;
         font-family: 'Pacifico', cursive !important;
-        &:hover{
-            color:white;
+        &:hover,&:focus{
+            color: #29a19c !important;
+            transition: color 0.3s ease-in-out;
         }
     }
     .navbar-toggler{
@@ -15,20 +16,18 @@
         }
     }
     .slash{
-        color:white;
-        font-family:  'Rubik', sans-serif !important;
+        color:#29a19c;
+        font-family: 'Courier Prime', monospace !important;
         padding:0.5rem;
-        font-size: large;
-        border: 2px solid transparent;
+        font-size: 17px;
     }
     .nav-link{
         color:white !important;
-        font-size: large;
-        font-family:  'Rubik', sans-serif !important;
-        border: 2px solid transparent;
-        &:hover{
-            border-bottom: 2px solid #ffff;
-            transition: border-bottom 0.2s ease-in-out;
+        font-size: 17px;
+        font-family: 'Courier Prime', monospace !important;
+        &:hover,&:focus{
+            color: #29a19c !important;
+            transition: color 0.3s ease-in-out;
         }
     }
 }
