@@ -14,9 +14,47 @@
     <link rel="shortcut icon" type="image/x-icon" href="/public/website_icon.png">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png">
     <title>Roshan Kanwar.</title>
+    <style>
+      .loader-container{
+          position: fixed;
+          top:0;
+          left:0;
+          width: 100%;
+          height: 100%;
+          background-color:#030B15;
+      }
+
+      .loader{
+          left:50%;
+          top:40%;
+          z-index:10000;
+          position: absolute;
+      }
+
+      .loader img{
+          width:100px;
+          height:100px;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="loader-container" id="loader">
+      <div class="loader">
+        <img src="loader.gif" alt="gif" />
+      </div>
+    </div>
     <div id="root"></div>
   </body>
+  <script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("#root").style.visibility = "hidden";
+          document.querySelector("#loader").style.visibility = "visible";
+        } else {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("#root").style.visibility = "visible";
+        }
+      }; 
+  </script>
 </html>

@@ -8,17 +8,6 @@ import Projects from './components/projects';
 import Contact from './components/contact';
 
 const App = () => {
-  React.useEffect(() => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
-    });
-  }, [])
   return (
     <div className="app">
       <NavbarComponent />
@@ -26,8 +15,8 @@ const App = () => {
       <About />
       <WorkExperience />
       <Quote />
-      <Projects/>
-      <Contact/>
+      <Projects />
+      <Contact />
     </div>
   );
 }
