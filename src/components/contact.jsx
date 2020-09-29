@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="head mx-5">
         <div className="main-div">
           <section className="div-1 contact">
-            <h1 className="my-3">Get In Touch</h1>
+            <h1 className="my-3 heading" style={{textAlign:"center"}}>Get In Touch</h1>
             <p>
               Have doubts? Need something? I'm always here to answer your
               queries. Click on the button below, drop a message and I'll try my

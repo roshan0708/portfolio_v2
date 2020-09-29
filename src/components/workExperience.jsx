@@ -9,7 +9,7 @@ const WorkExperience = () => {
         id="work"
       >
         <section className="div-2 work">
-          <h1 className="mb-4">Work Experience</h1>
+          <h1 className="mb-4 heading">Work Experience</h1>
           <Timeline />
         </section>
       </div>

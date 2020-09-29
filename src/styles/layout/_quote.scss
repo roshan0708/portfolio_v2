@@ -14,6 +14,7 @@
         .quote{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             color:white;
             p{
@@ -22,6 +23,7 @@
                 font-family: 'Cormorant Garamond', serif;
             }
             span{
+                text-align: center;
                 font-family:  'Rubik', sans-serif;
                 font-size: 23px;
             }

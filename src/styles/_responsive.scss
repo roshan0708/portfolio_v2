@@ -2,8 +2,9 @@
   .main-div{
     padding:30px;
   }
-  .contact-div .footer{
+  #root .contact-div .footer{
     bottom:-20px;
+    font-size: smaller !important;
   }
   .timeline{
       &-heading-div{
@@ -11,6 +12,28 @@
       }
   }
 }
+
+@media only screen and (max-width:430px){
+  .bg-div .head-div-second-text, .bg-div .head-div-third-text,h1,h2{
+    font-size: xx-large;
+    padding-left: 5px !important;
+  }
+  .bg-div .head-div-fourth-text{
+    font-size: medium;
+  }
+
+  .bg-div .social-media{
+    left:0;
+  }
+  
+  #root p,span{
+    font-size: medium !important;
+  }
+  .heading{
+    font-size: xx-large !important;
+  }
+}
+
 
 @media only screen and (max-width:769px){
     .card{
