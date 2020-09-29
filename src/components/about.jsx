@@ -5,6 +5,7 @@ const About = () => {
       <div
         style={{ background: "#0b0b0d", color: "white" }}
         className="main-div"
+        id="about"
       >
         <section className="div-1 about">
           <h1 className="heading">About Me</h1>

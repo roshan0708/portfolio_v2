@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faHackerrank } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faHackerrank, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Cover = () => {
     return (
-      <div className="bg-div">
+      <div className="bg-div" id="home">
         <div className="head mx-5">
           <div className="head-div mx-auto main-div">
             <section className="div-1">
@@ -22,48 +22,53 @@ const Cover = () => {
           </div>
         </div>
         <span className="scroll-btn">
-          <a href="#">
+          <a href="#home">
             <span className="mouse">
               <span></span>
             </span>
           </a>
         </span>
-        <div aria-orientation="left" className="social-media">
+        <div className="social-media">
           <ul className="social-media-list">
-            <li>
-              <a
-                className="social-media-list-link"
-                href="https://github.com/roshan0708"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faGithub} className="media-icons" />
-              </a>
-            </li>
-            <li>
-              <a
-                className="social-media-list-link"
-                href="https://www.linkedin.com/in/roshan0708/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} className="media-icons" />
-              </a>
-            </li>
-            <li>
-              <a
-                className="social-media-list-link"
-                href="https://www.hackerrank.com/roshan_0708"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faHackerrank} className="media-icons" />
-              </a>
-            </li>
+          {
+            SocialData.map((data,ind) => {
+              return (
+                <li>
+                  <a
+                    className="social-media-list-link"
+                    href={data.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={data.icon} className="media-icons" />
+                  </a>
+                </li>
+              );
+            })
+          }
           </ul>
         </div>
       </div>
     );
 }
 
-export default Cover
+export default Cover;
+
+const SocialData = [
+  {
+    link: "https://github.com/roshan0708",
+    icon: faGithub,
+  },
+  {
+    link: "https://www.linkedin.com/in/roshan0708/",
+    icon: faLinkedin,
+  },
+  {
+    link: "https://www.instagram.com/mr_bonhomie/",
+    icon: faInstagram,
+  },
+  {
+    link: "https://www.hackerrank.com/roshan_0708",
+    icon: faHackerrank,
+  },
+];

@@ -25,6 +25,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        span{
+            display: none;
+        }
     }
 	.timeline-item {
         margin-bottom: 20px;
@@ -68,7 +71,7 @@
             position: relative;
             width: 80%;
             height: 100%;
-            max-height: 150px;
+            max-height: fit-content;
             float: left;
 			right: 16px;
             border: 1px solid #f2f3f7;

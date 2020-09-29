@@ -2,18 +2,21 @@
   {
     "id":"ck123",
     "company": "Happiest Neurons",
+    "site":"https://www.happiestneurons.com/",
     "date": "Sept. 2020 - Present",
     "text": "React developer, declaring project scopes, user-interface development, monitoring and improving front-end performance."
   },
   {
     "id": "ck124",
     "company": "Relive Technology",
+    "site": "https://relive.work/",
     "date": "Jul. 2020 - Aug. 2020",
     "text": "Full Stack developer, project lead, designing user interactions on websites, developing servers and database for website functionality."
   },
   {
     "id": "ck125",
     "company": "FindMind Analytics",
+    "site": "https://legalmind.tech/",
     "date": "Jun. 2020 - Aug. 2020",
     "text": " React developer, data visualization, redesigning, revamping and enhancing performance and accessibility of existing website."
   }

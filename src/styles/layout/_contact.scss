@@ -1,0 +1,44 @@
+.contact-div{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),  url("../../assets/img/bg-10.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    .head{
+        height: 100%;
+        display: flex;
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:white;
+            p{
+                width: 70%;
+                text-align: center;
+            }
+            .button{
+                color:#29a19c;
+                padding:10px 20px;
+                border-color: #29a19c;
+                &:hover,&:focus,&:active{
+                    outline:none !important;
+                    box-shadow: none !important;
+                    background-color: transparent !important;
+                    color:#63c9c6 !important;
+                    border-color: #63c9c6 !important;
+                    transition: all 0.3 ease-in-out;
+                }
+            }
+        }
+    }
+    .footer{
+        position: relative;
+        font-size: 12px;
+        bottom: -50px;
+        color: rgb(189, 189, 189);
+    }
+}

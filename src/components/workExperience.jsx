@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Timeline from './timeline';
 
 const WorkExperience = () => {
@@ -6,6 +6,7 @@ const WorkExperience = () => {
       <div
         style={{ background: "#0b0b0d", color: "white"}}
         className="main-div"
+        id="work"
       >
         <section className="div-2 work">
           <h1 className="mb-4">Work Experience</h1>
