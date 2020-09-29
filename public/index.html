@@ -25,7 +25,7 @@
       }
 
       .loader{
-          left:50%;
+          left:40%;
           top:40%;
           z-index:10000;
           position: absolute;
@@ -35,13 +35,19 @@
           width:100px;
           height:100px;
       }
+      @media only screen and (max-width:430px) {
+        .loader{
+          left:50%;
+          top:50%;
+        }
+      }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="loader-container" id="loader">
       <div class="loader">
-        <img src="loader.gif" alt="gif" />
+        <img src="./loader.gif" alt="gif" />
       </div>
     </div>
     <div id="root"></div>
