@@ -2,6 +2,16 @@ import React from 'react';
 import { Nav, Navbar, Button } from 'react-bootstrap';
 
 const NavbarComponent = () => {
+    const changeBackground = () => {
+      let header = document.getElementsByClassName("header-nav")[0];
+      if (window.scrollY < 200) {
+        header.classList.remove("sticky");
+      } else {
+        header.classList.add("sticky");
+      }
+    };
+
+    window.addEventListener("scroll", changeBackground);
     return (
       <>
         <Navbar

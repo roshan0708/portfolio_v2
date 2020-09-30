@@ -1,9 +1,11 @@
 .header-nav{
     background: transparent !important;
+    transition: all 0.5s ease;
     .brand-name{
         color: whitesmoke;
         font-size: xx-large;
         font-family: 'Pacifico', cursive !important;
+        transition: all 0.5s ease;
         &:hover{
             color: #29a19c !important;
             transition: color 0.3s ease-in-out;
@@ -14,6 +16,7 @@
     }
     .navbar-toggler{
         border-color: #ffff;
+        transition: all 0.5s ease;
         &-icon{
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
         }
@@ -25,6 +28,7 @@
         color:white !important;
         font-size: 17px;
         font-family: 'Courier Prime', monospace !important;
+        transition: all 0.5s ease;
         &:hover,&:focus{
             color: #29a19c !important;
             transition: color 0.3s ease-in-out;
@@ -40,6 +44,29 @@
                 border-color: #63c9c6 !important;
                 transition: all 0.3 ease-in-out;
             }
+        }
+    }
+}
+
+.header-nav.sticky{
+    background-color: white !important;
+    transition: all 0.5s ease;
+    .brand-name,.nav-link{
+        color: black !important;
+        transition: all 0.5s ease;
+        &:hover{
+            color: #29a19c !important;
+            transition: color 0.3s ease;
+        }
+    }
+    .nav-link{
+        &:hover{
+            background-color: rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+        &:nth-last-child(1):hover{
+            background-color: white !important;
+            transition: all 0.5s ease;
         }
     }
 }
