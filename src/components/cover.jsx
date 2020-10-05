@@ -1,12 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faHackerrank, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import Fade from 'react-reveal/Fade'; 
 
 const Cover = () => {
     return (
       <div className="bg-div" id="home">
         <div className="head mx-5">
           <div className="head-div mx-auto main-div">
+          <Fade top cascade>
             <section className="div-1">
               <h1 className="my-1 head-div-first-text">Hi, my name is</h1>
               <h1 className="head-div-second-text">Roshan Kanwar.</h1>
@@ -19,8 +21,10 @@ const Cover = () => {
                 catching websites.
               </p>
             </section>
+            </Fade>
           </div>
         </div>
+        <Fade bottom>
         <span className="scroll-btn">
           <a href="#home">
             <span className="mouse">
@@ -28,12 +32,14 @@ const Cover = () => {
             </span>
           </a>
         </span>
+        </Fade>
         <div className="social-media">
+        <Fade left cascade>
           <ul className="social-media-list">
           {
             SocialData.map((data,ind) => {
               return (
-                <li>
+                <li key={data+ind}>
                   <a
                     className="social-media-list-link"
                     href={data.link}
@@ -47,6 +53,7 @@ const Cover = () => {
             })
           }
           </ul>
+          </Fade>
         </div>
       </div>
     );

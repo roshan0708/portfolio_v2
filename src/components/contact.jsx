@@ -1,10 +1,13 @@
 import React from "react";
+import { Fade } from 'react-reveal';
+
 
 const Contact = () => {
   return (
     <div className="contact-div" id="contact">
       <div className="head mx-5">
         <div className="main-div">
+        <Fade top cascade>
           <section className="div-1 contact">
             <h1 className="my-3 heading" style={{textAlign:"center"}}>Get In Touch</h1>
             <p>
@@ -19,6 +22,7 @@ const Contact = () => {
               Say Hello
             </a>
           </section>
+          </Fade>
           <p className="footer">Designed and Built by Roshan Kanwar</p>
         </div>
       </div>

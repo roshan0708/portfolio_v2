@@ -2,12 +2,14 @@ import React from 'react';
 import data from "./work.json";
 import { Container, Row, Col } from 'react-bootstrap';
 import WorkIcon from '@material-ui/icons/Work';
+import {Fade} from 'react-reveal';
 
 const Timeline = () => {
     return (
       <Container>
         <Row>
           <Col>
+            <Fade left big cascade>
             <ul className="timeline">
             {
                 data.map(item => {
@@ -34,6 +36,7 @@ const Timeline = () => {
                 })
             }
             </ul>
+            </Fade>
           </Col>
         </Row>
       </Container>

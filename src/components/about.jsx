@@ -1,4 +1,5 @@
 import React from 'react';
+import {Fade} from "react-reveal";
 
 const About = () => {
     return (
@@ -7,6 +8,7 @@ const About = () => {
         className="main-div"
         id="about"
       >
+        <Fade left cascade>
         <section className="div-1 about">
           <h1 className="heading">About Me</h1>
           <div>
@@ -50,6 +52,7 @@ const About = () => {
             </ul>
           </div>
         </section>
+        </Fade>
       </div>
     );
 }

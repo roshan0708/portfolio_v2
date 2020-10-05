@@ -4,11 +4,12 @@ import Pro1 from "../assets/img/project-1.jpg";
 import Pro2 from "../assets/img/project-2.jpg";
 import Pro3 from "../assets/img/project-3.jpg";
 import Pro4 from "../assets/img/project-4.jpg";
-
+import {Fade} from 'react-reveal';
 
 const Projects = () => {
   return (
     <div style={{ background: "#0b0b0d", color: "white" }} className="main-div" id="project">
+    <Fade left cascade>
       <section className="div-1">
         <h1 className="heading">Some of my recent works..</h1>
         <div>
@@ -22,6 +23,7 @@ const Projects = () => {
         }
         </div>
       </section>
+      </Fade>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, Button } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade'; 
 
 const NavbarComponent = () => {
     const changeBackground = () => {
@@ -21,12 +22,15 @@ const NavbarComponent = () => {
           bg="dark"
           expand="lg"
         >
+          <Fade left cascade>
           <Navbar.Brand href="#home" className="brand-name ml-5">
             Roshan.
           </Navbar.Brand>
+          </Fade>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto mr-5">
+              <Fade right cascade>
               <Nav.Link className="px-3" href="#home">
                 Home
               </Nav.Link>
@@ -52,6 +56,7 @@ const NavbarComponent = () => {
                   Resume
                 </Button>
               </Nav.Link>
+              </Fade>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
