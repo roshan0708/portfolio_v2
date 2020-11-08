@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Button } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade'; 
+import Resume from "../assets/Resume.pdf";
 
 const NavbarComponent = () => {
     const changeBackground = () => {
@@ -49,7 +50,7 @@ const NavbarComponent = () => {
               <Nav.Link
                 className="px-3"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/15SeYYPEyzM0kxhG1UCV32BEVVcEk5xOn/view?usp=sharing"
+                href={Resume}
                 target="_blank"
               >
                 <Button variant="outline-success" className="button">
