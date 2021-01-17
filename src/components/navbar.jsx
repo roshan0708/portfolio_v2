@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Button } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade'; 
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/Roshan_Kanwar_Resume.pdf";
 
 const NavbarComponent = () => {
     const changeBackground = () => {
