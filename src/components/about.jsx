@@ -17,7 +17,7 @@ const About = () => {
               coder, and writer from India.
             </p>
             <p className="text my-3">
-              I'm a third year undergraduate pursuing{" "}
+              I'm a pre-final year undergraduate pursuing{" "}
               <span style={{ color: "#63c9c6" }}>
                 Mathematics and Computing
               </span>{" "}

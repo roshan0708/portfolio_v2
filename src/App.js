@@ -10,7 +10,18 @@ import Loading, { loadingListener } from "./components/loader";
 
 const App = () => {
   React.useEffect(() => {
-    loadingListener()
+    
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+
+    loadingListener();
   }, [])
   return (
     <div className="app">

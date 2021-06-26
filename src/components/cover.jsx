@@ -1,13 +1,17 @@
-import React from 'react';
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faHackerrank, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import Fade from 'react-reveal/Fade'; 
+import {
+  faGithub,
+  faLinkedin,
+  faHackerrank,
+} from "@fortawesome/free-brands-svg-icons";
+import Fade from "react-reveal/Fade";
 
 const Cover = () => {
-    return (
-      <div className="bg-div" id="home">
-        <div className="head mx-5">
-          <div className="head-div mx-auto main-div">
+  return (
+    <div className="bg-div" id="home">
+      <div className="head mx-5">
+        <div className="head-div mx-auto main-div">
           <Fade top cascade>
             <section className="div-1">
               <h1 className="my-1 head-div-first-text">Hi, my name is</h1>
@@ -21,10 +25,10 @@ const Cover = () => {
                 catching websites.
               </p>
             </section>
-            </Fade>
-          </div>
+          </Fade>
         </div>
-        <Fade bottom>
+      </div>
+      <Fade bottom>
         <span className="scroll-btn">
           <a href="#home">
             <span className="mouse">
@@ -32,14 +36,13 @@ const Cover = () => {
             </span>
           </a>
         </span>
-        </Fade>
-        <div className="social-media">
+      </Fade>
+      <div className="social-media">
         <Fade left cascade>
           <ul className="social-media-list">
-          {
-            SocialData.map((data,ind) => {
+            {SocialData.map((data, ind) => {
               return (
-                <li key={data+ind}>
+                <li key={data + ind}>
                   <a
                     className="social-media-list-link"
                     href={data.link}
@@ -50,14 +53,13 @@ const Cover = () => {
                   </a>
                 </li>
               );
-            })
-          }
+            })}
           </ul>
-          </Fade>
-        </div>
+        </Fade>
       </div>
-    );
-}
+    </div>
+  );
+};
 
 export default Cover;
 
@@ -69,10 +71,6 @@ const SocialData = [
   {
     link: "https://www.linkedin.com/in/roshan0708/",
     icon: faLinkedin,
-  },
-  {
-    link: "https://www.instagram.com/mr_bonhomie/",
-    icon: faInstagram,
   },
   {
     link: "https://www.hackerrank.com/roshan_0708",

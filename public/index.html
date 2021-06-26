@@ -1,73 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="This is a portfolio site of Roshan Kanwar"
-    />
-    <link rel="icon" href="%PUBLIC_URL%/website_icon.png" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" type="image/x-icon" href="/public/website_icon.png">
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png">
-    <title>Roshan Kanwar.</title>
-    <style>
-      
-      .main_loading {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2000;
-        height: 100vh;
-        width: 100%;
-        opacity: 1;
-        background-color: white;
-      }
 
-      .main_loading-hidden {
-        opacity: 0;
-        z-index: -100;
-      }
-      
-      .c-loader {
-        left:50%;
-        top:40%;
-        z-index:10000;
-        position: absolute;
-        animation:is-rotating 3s infinite;
-        width: 50px;
-        height: 50px;
-        border: 6px solid #e5e5e5;
-        border-top-color: #000;
-        border-radius:50%;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Roshan grew up in India, he's currently pursuing his Masters at IIT (ISM) Dhanbad.He's a software developer during day and gamer at night." />
+  <link rel="icon" href="%PUBLIC_URL%/website_icon.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="shortcut icon" type="image/x-icon" href="/public/website_icon.png">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png">
+  <title>Roshan Kanwar.</title>
+  <style>
+    .main_loading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      height: 100vh;
+      width: 100%;
+      opacity: 1;
+      background-color: white;
+    }
 
-      @keyframes is-rotating {
-        to{
-          transform: rotate(1turn);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
+    .main_loading-hidden {
+      opacity: 0;
+      z-index: -100;
+    }
+  </style>
+</head>
 
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-  </script>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

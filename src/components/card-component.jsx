@@ -14,11 +14,13 @@ const CardComponent = ({github,external,img,title,text,skills}) => {
                 <GitHubIcon style={{ fill: "black" }} />
               </a>
             </li>
-            <li>
-              <a href={external} target="_blank" rel="noopener noreferrer">
-                <LaunchIcon style={{ fill: "black" }} />
-              </a>
-            </li>
+            {external && (
+              <li>
+                <a href={external} target="_blank" rel="noopener noreferrer">
+                  <LaunchIcon style={{ fill: "black" }} />
+                </a>
+              </li>
+            )}
           </ul>
           <img src={img} alt="img" />
           <div className="overlay"></div>

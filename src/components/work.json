@@ -1,23 +1,30 @@
 [
   {
+    "id":"ck126",
+    "company": "Karkhana App",
+    "site":"https://www.karkhana.app/",
+    "date": "Mar 2021 - Oct 2021",
+    "text": "Full Stack developer - Programmed UI/UX of the software, scripted new api endpoints for the front-end systems."
+  },
+  {
     "id":"ck123",
     "company": "Happiest Neurons",
     "site":"https://www.happiestneurons.com/",
-    "date": "Sept. 2020 - Oct. 2020",
-    "text": "React developer, declaring project scopes, user-interface development, monitoring and improving front-end performance."
+    "date": "Sept 2020 - Oct 2020",
+    "text": "React developer - Declared project scopes, user-interface development, monitored and improved front-end performance."
   },
   {
     "id": "ck124",
     "company": "Relive Technology",
     "site": "https://relive.work/",
-    "date": "Jul. 2020 - Aug. 2020",
-    "text": "Full Stack developer, project lead, designing user interactions on websites, developing servers and database for website functionality."
+    "date": "Jul 2020 - Aug 2020",
+    "text": "Full Stack developer - Project lead, designed user interactions on websites, developed servers and database for website functionality."
   },
   {
     "id": "ck125",
     "company": "FindMind Analytics",
     "site": "https://legalmind.tech/",
-    "date": "Jun. 2020 - Aug. 2020",
-    "text": " React developer, data visualization, redesigning, revamping and enhancing performance and accessibility of existing website."
+    "date": "Jun 2020 - Aug 2020",
+    "text": " React developer - Data visualization, redesigned, revamped and enhanced performance and accessibility of existing website."
   }
 ]
